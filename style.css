@@ -1,0 +1,120 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial';
+}
+
+body{
+    background: lavender;
+}
+.navigation-mobile{
+    padding: 2rem 3rem;
+}
+
+.top{
+    width: 90%;
+    height: 300px;
+    border-radius: 20px;
+    font-size: 50px;
+    color: #fff;
+    text-align: center;
+    box-shadow: 5px 10px 20px rgba(0, 0, 0, 0.3);
+    background: royalblue;
+    margin: 20px auto
+}
+.middle{
+    width: 90%;
+    height: 600px;
+    background: tomato;
+    border-radius: 20px;
+    font-size: 50px;
+    text-align: justify;
+    margin: 30px auto;
+    box-shadow: 5px 10px 20px rgba(0, 0, 0, 0.3);
+    color: #fff;
+    text-align: center;
+}
+.other{
+    width: 90%;
+    height: 600px;
+    background: #A3E4D7;
+    border-radius: 20px;
+    font-size: 50px;
+    margin: 30px auto;
+    color: #fff;
+    text-align: center;
+    box-shadow: 5px 10px 20px rgba(0, 0, 0, 0.3);
+}
+.bottom{
+    width: 90%;
+    height: 600px;
+    background: #000;
+    border-radius: 20px;
+    font-size: 50px;
+    margin: 30px auto;
+    color: #fff;
+    text-align: center;
+    box-shadow: 5px 10px 20px rgba(0, 0, 0, 0.3);
+}
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    background: #fff;
+    height: 100px;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    /* padding: .2rem 0; */
+}
+
+.active-anime{
+    flex-grow: 4;
+}
+.menu-item{
+    flex-grow: 1;/*Se partager l'espace entre eux*/
+    height: 60px;
+    border-radius: 9999px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: flex-grow 0.4s cubic-bezier(0.17, 0.67, 0.27, 1.42);
+}
+.menu-item img{
+    width: 45px;
+}
+.menu-item:not(:nth-child(1)){
+    margin-left: 10px;
+}
+nav a:nth-child(1){
+     background:#F4F6F6;
+}
+nav a:nth-child(2){
+    background: #F4F6F6;
+}
+nav a:nth-child(3){
+    background: #F4F6F6;
+}
+nav a:nth-child(4){
+    background: #F4F6F6;
+}
+nav a:nth-child(5){
+    background: #F4F6F6;
+} 
+
+
+
+
+
+@media (min-width:768px){
+   nav{
+    display: block;
+   }
+}
+@media (min-width:1024px){
+    nav{
+     display: none;
+    }
+ }
